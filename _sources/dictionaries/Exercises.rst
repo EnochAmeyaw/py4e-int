@@ -170,7 +170,7 @@ Multiple Choice Questions
    :feedback_a: Try again! The name of the module is written with a lower case s
    :feedback_b: Correct! This is the correct way to initialize the string module
    :feedback_c: Try again! The term module is implied when importing the string module
-   :feedback_c: Try again! The name of the module is written with a lower case s and the term module is implied when importing the string module
+   :feedback_d: Try again! The name of the module is written with a lower case s and the term module is implied when importing the string module
 
    Which of the following is the correct way to initialize the string module?
 
