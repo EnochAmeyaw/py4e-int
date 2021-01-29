@@ -17,6 +17,19 @@ Scale down the input
    value that manifests the error, and then increase it gradually as
    you find and correct errors.
 
+.. mchoice:: question9_6_1
+   :practice: T
+   :answer_a: Run through the entire code all at once to try and find bugs
+   :answer_b: Split the debugging into stages by scaling down the input
+   :answer_c: Assume your code is perfect and move on
+   :answer_d: Debug halfway through the code
+   :correct:  b
+   :feedback_a: Try again! It is harder to spot errors when looking at the entire code rather than looking at small sections of code.
+   :feedback_b: Correct! When dealing with large portions of data, it is best to separate testing into smaller pieces so you can more clearly see where the errors might be coming from.
+   :feedback_c: Try again! No one is perfect!If you assume your code is perfect when it is not and move on, it might cause problems in the future that may be hard to trace back
+   :feedback_d: Try Again! halfway may not be the smallest value that manifests errors and may take more time to look through and debug.
+
+   If you are trying to debug a program that reads in a lot of data, what is the best way to debug the code?
 
 
 Check summaries and types
@@ -28,46 +41,18 @@ Check summaries and types
    type. For debugging this kind of error, it is often enough to print
    the type of a value.
 
-
-
-Write self-checks
-:   Sometimes you can write code to check for errors automatically. For example, if you are computing the average of a list of numbers, you could check that the result is not greater than the largest element in the list or less than the smallest. This is called a "sanity check" because it detects results that are "completely illogical".
-
-.. code-block::
-
-   Another kind of check compares the results of two different
-   computations to see if they are consistent. This is called a
-   "consistency check".
-
-
-
-Pretty print the output
-:   Formatting debugging output can make it easier to spot an error.
-
-Again, time you spend building scaffolding can reduce the time you spend
-debugging.
-
-.. mchoice:: question9_6_1
-   :practice: T
-   :answer_a: Run through the entire code all at once to try and find bugs
-   :answer_b: Split the debugging into stages by scaling down the input
-   :answer_c: Assume your code is perfect and move on
-   :correct:  b
-   :feedback_a: Try again!
-   :feedback_b: Correct! When dealing with large portions of data, it is best to separate testing into smaller pieces so you can more clearly see where the errors might be coming from.
-   :feedback_c: Try again!
-
-   If you are trying to debug a program that reads in a lot of data, what is the best way to debug the code?
-
 .. mchoice:: question9_6_2
    :practice: T
    :answer_a: Python is performing a string concatenation and not integer addition
    :answer_b: There is nothing wrong with this code
    :answer_c: There is a parenthesis that was never closed
+   :answer_d: The program is reading in the wrong values
    :correct: a
-   :feedback_a: Correct! The input function returns a string not an integer. For this to be correct, you would need to initialize input as an integer like so: int(input(...))
-   :feedback_b: Try again!
-   :feedback_c: Try again!
+   :feedback_a: Correct! The input function returns a string not an integer. For this to be correct, you would need to initialize input as an integer like so: int(input)
+   :feedback_b: Try again! Look at the output of the final time and see the difference between the final time printed and the correct final time.
+   :feedback_c: Try again! All the parenthesis are closed in the code provided. Look at the output of the final time and see the difference between the final time printed and the correct final time.
+   :feedback_d: Try again! The printend inputs give the correct values. Look at the output of the final time and see the difference between the final time printed and the correct final time.
+   
 
    What error (if any) appears when the following code is run?
 
@@ -88,8 +73,26 @@ debugging.
    :answer_b: Check summaries and types
    :answer_c: The debugger will tell you what is wrong and how to fix it
    :correct: b
-   :feedback_a: Try again!
+   :feedback_a: Try again! This is a small block of code which will not need to be scaled down. 
    :feedback_b: Correct! The code above was not adding two integers together, it was trying to concatenate two strings. It is crucial to always check summaries and types to make sure your code is doing exactly what you want it to do.
-   :feedback_c: Try again!
+   :feedback_c: Try again! The debugger will only flag errors, but in this case there are no errors. This means that there is an error in interpretation 
 
    How could the error found in the previous problem been detected?
+
+Write self-checks
+:   Sometimes you can write code to check for errors automatically. For example, if you are computing the average of a list of numbers, you could check that the result is not greater than the largest element in the list or less than the smallest. This is called a "sanity check" because it detects results that are "completely illogical".
+
+.. code-block::
+
+   Another kind of check compares the results of two different
+   computations to see if they are consistent. This is called a
+   "consistency check".
+
+
+
+Pretty print the output
+:   Formatting debugging output can make it easier to spot an error.
+
+Again, time you spend building scaffolding can reduce the time you spend
+debugging.
+
