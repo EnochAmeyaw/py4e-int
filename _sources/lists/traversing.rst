@@ -96,10 +96,13 @@ as a single element. Check out the length of this list:
     :answer_a: 3
     :answer_b: 1
     :answer_c: 2
+    :answer_d: 0
     :correct: b
     :feedback_a: Remember that the length of a list is only the elements in the outside list.
     :feedback_b: There is technically only one element in this list, but that element has its own items.
     :feedback_c: Remember that the length of a list is only the elements in the outside list.
+    :feedback_d: Remember that list is not empty.
+
 
     How many items are in ``nestedList``?
 

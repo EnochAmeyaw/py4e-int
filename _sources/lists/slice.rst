@@ -36,10 +36,12 @@ slice is a copy of the whole list.
     :answer_a: [ [ ], 3.14, False]
     :answer_b: [ [ ], 3.14]
     :answer_c: [ [56, 57, "dog"], [ ], 3.14, False]
+    :answer_d: [ 3, 67, "cat", [56, 57, "dog"], [ ]]
     :correct: a
     :feedback_a: Yes, the slice starts at index 4 and goes up to and including the last item.
     :feedback_b: By leaving out the upper bound on the slice, we go up to and including the last item.
-    :feedback_c: Index values start at 0.
+    :feedback_c: Index values should start at 0.
+    :feedback_d: Index values start at from the number specified, not the beginning.
 
     What is printed by the following statements?
 
@@ -51,11 +53,13 @@ slice is a copy of the whole list.
 .. mchoice:: listSlice_MC_empty
     :answer_a: []
     :answer_b: [3]
-    :answer_c: [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
-    :correct: c
+    :answer_c: [False]
+    :answer_d: [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+    :correct: d
     :feedback_a: An empty slice like this would not produce an empty list. Think about how the slice indexes.
     :feedback_b: This would be correct if the slice was [:1]
-    :feedback_c: Omitting both indexes in a slice will create a copy of the whole list.
+    :feedback_c: An empty slice like this would not produce the last item in list. This would be correct if the slice was [:6]
+    :feedback_d: Omitting both indexes in a slice will create a copy of the whole list.
     :practice: T
 
     What is printed by the following statements?

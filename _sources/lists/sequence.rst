@@ -49,13 +49,17 @@ As you might expect, you can assign list values to variables:
 
 .. mchoice:: listSeq_MC_tf
     :practice: T
-    :answer_a: True
-    :answer_b: False
-    :correct: b
-    :feedback_a: lists can have different data types.
-    :feedback_b: lists can contain any combination of items, even other lists!
+    :answer_a: A list cannot contain zero elements.
+    :answer_b: A list can contain only integer items.
+    :answer_c: A list has to contain items of the same type.
+    :answer_d: A list can contain a list of items.
+    :correct: d
+    :feedback_a: Try Again! A list that contains no elements is called an empty list; you can create one with empty brackets.
+    :feedback_b: Try Again! lists can contain any combination of items, even other lists!
+    :feedback_c: Try Again! The elements of a list don’t have to be the same type.
+    :feedback_d: Correct! A list within another list is nested.
 
-    True or False? A list can contain only integer items.
+    Which of the following is true about lists?
 
 .. mchoice:: listSeq_MC_length
     :practice: T
@@ -77,4 +81,4 @@ As you might expect, you can assign list values to variables:
     A list within another list is said to be __________.
 
     - :[Nn]ested: A list within another list is nested.
-      :.*: Try again.
+      :.*: Go back and reread the text.

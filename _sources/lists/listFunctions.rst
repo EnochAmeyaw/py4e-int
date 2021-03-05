@@ -28,13 +28,17 @@ etc.) work with lists of strings and other types that can be comparable.
 
 .. mchoice:: listFunct_MC_sum
     :practice: T
-    :answer_a: True
-    :answer_b: False
+    :answer_a: The max functions can work on any list.
+    :answer_b: The len functions can work on any list.
+    :answer_c: The sum functions can work on any list.
+    :answer_d: All of the above,
     :correct: b
-    :feedback_a: The max and len functions can work on any list.
-    :feedback_b: The max and len functions can work on any list, but the sum function can only work on lists made of numbers.
+    :feedback_a: Try again! This is true. The max functions can work on any list.
+    :feedback_b: Try again! This is true. The max len functions can work on any list
+    :feedback_c: Correct! The sum functions cannot work on any list.
+    :feedback_d: Try Again! The max and len functions can work on any list,  but the sum function can only work on lists made of numbers.
 
-    True or False? The max, sum, and len functions can work on any list.
+    Which of the following statements are false about the list functions?
 
 We could rewrite an earlier program that computed the average of a list
 of numbers entered by the user using a list.

@@ -23,10 +23,12 @@ Python provides methods that operate on lists. For example,
     :answer_a: [4, 2, 8, 6, 5, False, True]
     :answer_b: [4, 2, 8, 6, 5, True, False]
     :answer_c: [True, False, 4, 2, 8, 6, 5]
+    :answer_d: [4, 2, 8, 6, 5, False]
     :correct: b
     :feedback_a: True was added first, then False was added last.
     :feedback_b: Yes, each item is added to the end of the list.
-    :feedback_c: append adds at the end, not the beginning.
+    :feedback_c: Append adds at the end, not the beginning.
+    :feedback_d: Append adds at the end, but does replace the previous append.
 
     What is printed by the following statements?
 
@@ -78,5 +80,5 @@ you will be disappointed with the result.
 
     Most list methods are _______.
 
-    - :[Vv]oid: Most list methods are void meaning they don't return anything.
+    - :[Vv]oid: Correct! Most list methods are void meaning they don't return anything.
       :.*: Try again! (Remember that functions are either fruitful or void)
